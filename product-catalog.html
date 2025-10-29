@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>รายการสินค้า</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .card:hover img {
+      transform: scale(1.08);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-gray-100 min-h-screen font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl md:text-4xl font-bold text-blue-600 flex items-center gap-2">🛍️ รายการสินค้า</h1>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">ตะกร้าสินค้า</button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-7xl mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <!-- Card 1 -->
+      <div class="card bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
+        <img src="img/ลำโพงพกพา.webp" alt="ลำโพงบลูทูธพกพา" class="w-full h-52 object-cover transition-transform duration-300">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold text-gray-800 mb-1">ลำโพงบลูทูธพกพา</h2>
+          <p class="text-gray-600 text-sm mb-3">เสียงกระหึ่ม พกง่าย แบตอึด ใช้งานได้นานสูงสุด 10 ชม.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold text-green-600">฿799</span>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
+        <img src="img/hufang.webp" alt="หูฟังไร้สาย Bluetooth" class="w-full h-52 object-cover transition-transform duration-300">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold text-gray-800 mb-1">หูฟังไร้สาย Bluetooth</h2>
+          <p class="text-gray-600 text-sm mb-3">เสียงเบสแน่น ชัดทุกย่าน เชื่อมต่อเสถียร ใช้งานได้นาน.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold text-green-600">฿599</span>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="นาฬิกาอัจฉริยะ" class="w-full h-52 object-cover transition-transform duration-300">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold text-gray-800 mb-1">นาฬิกาอัจฉริยะ</h2>
+          <p class="text-gray-600 text-sm mb-3">วัดชีพจร นับก้าว แจ้งเตือนข้อความ พร้อมกันน้ำ.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold text-green-600">฿1,299</span>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
+        <img src="img/รองเท้าวิ่ง.avif" alt="รองเท้าวิ่ง" class="w-full h-52 object-cover transition-transform duration-300">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold text-gray-800 mb-1">รองเท้าวิ่งผู้ชาย</h2>
+          <p class="text-gray-600 text-sm mb-3">พื้นนุ่ม เบา กระชับ ระบายอากาศดี เหมาะกับทุกการวิ่ง.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold text-green-600">฿999</span>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
+        <img src="img/krapao.webp" alt="กระเป๋าเป้กันน้ำ" class="w-full h-52 object-cover transition-transform duration-300">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold text-gray-800 mb-1">กระเป๋าเป้กันน้ำ</h2>
+          <p class="text-gray-600 text-sm mb-3">ดีไซน์เรียบหรู กันน้ำ 100% เหมาะกับการเดินทาง.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold text-green-600">฿899</span>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
+        <img src="img/kalong.png" alt="กล้องดิจิตอล" class="w-full h-52 object-cover transition-transform duration-300">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold text-gray-800 mb-1">กล้องดิจิตอล</h2>
+          <p class="text-gray-600 text-sm mb-3">ความละเอียด 24MP ถ่ายคมชัดพร้อมโหมดกลางคืน.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold text-green-600">฿4,590</span>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
+        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800" alt="แว่นกันแดดแฟชั่น" class="w-full h-52 object-cover transition-transform duration-300">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold text-gray-800 mb-1">แว่นกันแดดแฟชั่น</h2>
+          <p class="text-gray-600 text-sm mb-3">เลนส์กัน UV400 ดีไซน์โมเดิร์น สวมใส่สบายทุกโอกาส.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold text-green-600">฿499</span>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="โน้ตบุ๊ก" class="w-full h-52 object-cover transition-transform duration-300">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold text-gray-800 mb-1">โน้ตบุ๊กพกพา</h2>
+          <p class="text-gray-600 text-sm mb-3">เครื่องเบา จอชัด ประสิทธิภาพสูง เหมาะกับงานและเรียน.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold text-green-600">฿14,900</span>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6 text-center mt-10">
+    <p>© 2025 ร้านค้าตัวอย่าง | ออกแบบด้วย Tailwind CSS</p>
+  </footer>
+
+</body>
+</html>
